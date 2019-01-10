@@ -11,6 +11,7 @@ class StudentsController < ApplicationController
   def activate
     set_student
     @student.active == false ? @student.active = true : @student.active = false
+    @student.save
     redirect_to student_path(@student)
   end
 
