@@ -63,7 +63,6 @@ describe 'Activate page' do
   end
 
   it "Should mark an active student as inactive" do
-    binding.pry
     @student.active = true
     @student.save
     visit activate_student_path(@student)
