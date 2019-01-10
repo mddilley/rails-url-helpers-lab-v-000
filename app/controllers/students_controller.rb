@@ -10,6 +10,7 @@ class StudentsController < ApplicationController
 
   def activate
     set_student
+    redirect to '/students/#{params[:id]}'
   end
 
   private
