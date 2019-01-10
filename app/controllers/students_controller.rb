@@ -10,7 +10,6 @@ class StudentsController < ApplicationController
 
   def activate
     set_student
-    @student.active == true ? @student.active = false : @student.active = true
   end
 
   private
